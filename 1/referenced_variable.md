@@ -6,28 +6,27 @@
 * 定义方式：使用 & 符号
 
 ### 工作原理
-*   ```php
-        <?php
-        // 定义一个变量
-        $a = range(0, 1000);
-        // 定义变量 b，将 a 的值给 b
-        $b = $a;
-        // 对于 PHP COW 机制：copy on write
-        // 对于 $a 和 $b 其中的任何一个变量，只有对他们进行修改的时候，才会 copy 内存空间 
-    ```
-    
-    <div align="center">
-        <img src="img/referenced_variable1.jpg" height="280" >
-    </div>
-    
-    ```php
-        <?php
-        // 对 a 进行修改
-        $a = range(0, 1000);
-        // 此时 $a 虽然值未改变，但已被重新定义
-    ```
-    
-    <div align="center">
-        <img src="img/referenced_variable2.jpg" height="280" >
-    </div>
-    
+```php
+    <?php
+    // 定义一个变量
+    $a = range(0, 1000);
+    // 定义变量 b，将 a 的值给 b
+    $b = $a;
+    // 对于 PHP COW 机制：copy on write
+    // 对于 $a 和 $b 其中的任何一个变量，只有对他们进行修改的时候，才会 copy 内存空间 
+```
+
+<div align="center">
+    <img src="img/4/referenced_variable1.jpg" height="280" >
+</div>
+
+```php
+    <?php
+    // 对 a 进行修改
+    $a = range(0, 1000);
+    // 此时 $a 虽然值未改变，但已被重新定义
+```
+
+<div align="center">
+    <img src="img/4/referenced_variable2.jpg" height="280" >
+</div>
