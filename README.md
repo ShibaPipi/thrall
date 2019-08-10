@@ -10,9 +10,9 @@
 
 ## 反馈
 
-[交流 & 吐槽](https://github.com/pangudashu/php7-internal/issues/3)
+[交流 & 吐槽]()
  
-[错误反馈](https://github.com/pangudashu/php7-internal/issues/2)
+[错误反馈]()
 
 ## 纸质版
 
