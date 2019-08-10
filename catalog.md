@@ -18,7 +18,7 @@
 * 第3章 Linux 基础知识
     * [Linux]()
 * 第4章 MySQL 数据库的基础与优化
-    * MySQL 数据库基础
+    * [MySQL 数据库基础](4/basic.md)
     * MySQL 创建高性能索引
     * MySQL 的 SQL 语句
     * MySQL 的查询优化
