@@ -1,7 +1,7 @@
 ## MySQL 数据库基础考点
 
 
-### MySQL 数据类型
+>### MySQL 数据类型
 
 * 整数类型：TINYINT、SMALLINT、MEDIUMINT、INT、BIGINT
     * 属性：unsigned（非负）
@@ -33,12 +33,12 @@
     * 如果要存储微秒，可以使用 BIGINT 存储
 
 >### 列属性
->* AUTO_INCREMENT 自增
->* DEFAULT 默认值
->* NOT NULL 非空
->* ZEROFILL 自动补零
+* AUTO_INCREMENT 自增
+* DEFAULT 默认值
+* NOT NULL 非空
+* ZEROFILL 自动补零
 
-### 延伸考点
+>### 延伸考点
 * MySQL 常见操作
     * 连接与关闭：mysql -u -p -h -P
     * 其他：
