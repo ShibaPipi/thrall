@@ -17,7 +17,7 @@
     ```
     
     <div align="center">
-        <img src="../img/4/referenced_variable1.jpg" height="200" >
+        <img src="../img/1/referenced_variable1.jpg" height="200" >
     </div>
     
     ```php
@@ -27,7 +27,7 @@
     ```
     
     <div align="center">
-        <img src="../img/4/referenced_variable2.jpg" height="200" >
+        <img src="../img/1/referenced_variable2.jpg" height="200" >
     </div>
 
 *   ```php
@@ -50,5 +50,5 @@
     ```
     
     <div align="center">
-        <img src="../img/4/referenced_variable3.jpg" height="200" >
+        <img src="../img/1/referenced_variable3.jpg" height="200" >
     </div>
