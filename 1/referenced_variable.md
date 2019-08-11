@@ -21,7 +21,6 @@
     </div>
     
     ```php
-        <?php
         // 对 a 进行修改
         $a = range(0, 1000);
         // 此时 $a 虽然值未改变，但已被重新定义
@@ -30,4 +29,26 @@
     <div align="center">
         <img src="../img/4/referenced_variable2.jpg" height="200" >
     </div>
+
+*   ```php
+        <?php
+        $a = 1;
+        var_dump(memory_get_usage());
+        $b = $a;
+        var_dump(memory_get_usage());
+        // 上面两内存占用基本相等
+        $a = 1;
+        var_dump(memory_get_usage());
+        // 内存有突然增加
+    ```
     
+*   ```php
+        <?php
+        $a = range(1, 1000);
+        $b = &$a;
+        $a = range(1, 1000);
+    ```
+    
+    <div align="center">
+        <img src="../img/4/referenced_variable3.jpg" height="200" >
+    </div>
