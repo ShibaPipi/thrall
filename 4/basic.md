@@ -32,11 +32,11 @@
     * 用整数保存时间戳的格式，通常不方便处理
     * 如果要存储微秒，可以使用 BIGINT 存储
 
-### 列属性
-* AUTO_INCREMENT 自增
-* DEFAULT 默认值
-* NOT NULL 非空
-* ZEROFILL 自动补零
+>### 列属性
+>* AUTO_INCREMENT 自增
+>* DEFAULT 默认值
+>* NOT NULL 非空
+>* ZEROFILL 自动补零
 
 ### 延伸考点
 * MySQL 常见操作
