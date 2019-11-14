@@ -74,6 +74,39 @@
 * ```ANSI(gb2132)``` 环境下，```0xb0``` - ```0xf7```，```0xa1``` - ```0xfe```
 * ```UTF-8``` 要使用 ```u``` 模式修正符使字符串被当做 UTF-8
 * 在 ```ANSI(gb2132)``` 环境下，使用 ```chr()``` 将 ```ASCII``` 编码转换为字符
+*   ```php
+    <?php
+    $str = '中文';
+    $pattern = '/[\x{4e00}-\x{9fa5}]+/u';
+    preg_match($pattern, $str, $match);
+    var_dump($match);
+    
+    // gb2132
+    $pattern = '/[' . chr(0xb0) . '-' . chr(0xf7) . '][' . chr(0xa1) . '-' . chr(0xfe) . ']/';    
+    ```
 
 >### 解题方法
+* 先写出一个要匹配的字符串
+* 自左向右的顺序使用正则表达式的原子和元字符进行拼接
+* 最终加入模式修正符
+
 >### 真题
+* 请写出以 ```139``` 开头的 ```11``` 位手机号的正则表达式
+    ```php
+    <?php
+    $str = '13900000000';
+    $pattern = '/^139\d{8}$/';
+    preg_match($pattern, $str, $match);
+    var_dump($match);
+    ```
+* 请写出一个正则表达式，取出页面中所有的 img 标签中的 src 值
+    ```php
+    <?php
+    $str = '<img alt="高清无码" id="av" src="av.jpg" />';
+    $pattern = '<img.*?src="(.*?)".*?\/?>i'; // 后向引用，可以将其打印出来
+    preg_match($pattern, $str, $match);
+    var_dump($match);
+    
+    // 如有多个标签，请用 preg_match_all() 打印全部
+    // 可以在末尾加 U 来代替 ? 取消贪婪模式
+    ```
